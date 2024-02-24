@@ -1,0 +1,1095 @@
+fileFormatVersion: 2
+guid: 153f97185cf6b7840b08b70f97d44964
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_0
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 299
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6285c9c29a9fd534cb1ff2c71f24df8e
+      internalID: -2070307830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 299
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e130d7648b1854a8da82ecc589b36e
+      internalID: -672639620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 250
+        width: 21
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e2d1b2a6330b646860b727183a7f0c
+      internalID: 806878317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 250
+        width: 21
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60ac73293c368143ae20928fce0be45
+      internalID: 286621042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 200
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec38da823d818cc46836585b7a0e442f
+      internalID: 669322524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk2 && Jump1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 200
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d215f3a7467d3846a84aa19c70e3e22
+      internalID: 1837831086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 200
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5e13cfa3ad3154dadb2208d6027552
+      internalID: -1714794805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 200
+        width: 21
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd7209734847fa47b0bf8e90fb7b066
+      internalID: 318850552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_8
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 200
+        width: 21
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0142faaf73ac14342b8e16122a4ae5b5
+      internalID: 650691799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 200
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234fb4a06f48f4b4d8481a97edb0b54b
+      internalID: -1650944109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_10
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 200
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7e7d2341755054a83264180dd0fdfb
+      internalID: -369943797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_11
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 200
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2123e733bcb55244b2ad59ba8f9b587
+      internalID: 934884703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 149
+        width: 23
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9673e4f9d9074dd4292f2ec7486f14fa
+      internalID: 1551719798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 151
+        width: 21
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9d9f0997273944e8184a6076c51017
+      internalID: 152341800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 149
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e7767d0ac24b747b7415666122621f
+      internalID: -1714534194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_15
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 152
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ba035ac24fd6847972eca393e3b8aa
+      internalID: -36980514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run4
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 149
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a2b8661693f0044bff168fa6d2f20f
+      internalID: 679646772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 149
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31890f7085ea6a14b80a6ec65e06f15f
+      internalID: -2110325587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_18
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 152
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e2a5d799da41743bc4e272c95a0eaa
+      internalID: 1682884713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_19
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 149
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa041e8627c807f4496c8e3313b3bfff
+      internalID: -1996658300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_20
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 151
+        width: 21
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ed8388a0fe57545bf1ac99e1abb477
+      internalID: -1178814357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_21
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 149
+        width: 23
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df31170d3e66ee34f9595ffcfec0444b
+      internalID: -208432282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_22
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 99
+        width: 24
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf28dc148e647784c8c66117cba6a2d0
+      internalID: 2027939463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_23
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 99
+        width: 24
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f3f0ac4d98a56478b232ed1c297c29
+      internalID: -865652206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_24
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 99
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573f3518590d81245849a5ef1001023a
+      internalID: 300371804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_25
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 99
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed4b91c3bb8540418a61bc887136465
+      internalID: -1199135209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_26
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 99
+        width: 24
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7b6063d002c7c4fbd4b4b45d978dcb
+      internalID: -1001589269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_27
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 99
+        width: 24
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37da3ad4fbb635642ae68b72ca1379a4
+      internalID: -622978866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump 1.0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 25
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dea8c8f868df264dbc5621188cfd6d3
+      internalID: 1447202772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump 1.1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 47
+        width: 27
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64690e10825bba14eaf76c9366014221
+      internalID: -248354650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_30
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 50
+        width: 30
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcf5d0177da52241bc82e9e3ffbe15a
+      internalID: -2132898076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_31
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 49
+        width: 28
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763f472c8ea5b984b9b51165bd92bd41
+      internalID: 899045095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_32
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 49
+        width: 28
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca85682c523575343874050282d27356
+      internalID: 2050928934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_33
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 50
+        width: 30
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2397eebccb0a074e9f2bb62d5e03b08
+      internalID: 340120203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_34
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 47
+        width: 27
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e8c6f29052cdd41a1fc2315d91b28e
+      internalID: -1194854789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_35
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 47
+        width: 25
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0233f7d3ce1e576448ec54a57242eb88
+      internalID: 1809045599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerProjectile
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 11
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850f8eb615123a344a8ed47c631bb264
+      internalID: -574916917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Throw2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 27
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf91caf28b8c414f82082dd1ddb304a
+      internalID: -1940421014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Throw1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 30
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb6e63d74cc22b49a086dbf6a8b8f23
+      internalID: -572739348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpAttack1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 32
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ed65e1fc3e00446bd1cf4f7f791bc6
+      internalID: -961648601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpAttack2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 32
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b22ff6329aa70944a9a7cc8249387d3
+      internalID: 1976079226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_41
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 0
+        width: 30
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2277ed8a81c092a48a289166f3bd3779
+      internalID: 513960277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_42
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 0
+        width: 27
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fed9a98eab5e0f4c8b6748e7897a610
+      internalID: 1424115342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_43
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 11
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f050a4ec4d7eb4394b0da2d1b7d3aa
+      internalID: -1611474310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Idle1: 806878317
+      Jump 1.0: 1447202772
+      Jump 1.1: -248354650
+      Jump2: 318850552
+      JumpAttack1: -961648601
+      JumpAttack2: 1976079226
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_0: -2070307830
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_1: -672639620
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_10: -369943797
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_11: 934884703
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_15: -36980514
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_17: -2110325587
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_18: 1682884713
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_19: -1996658300
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_20: -1178814357
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_21: -208432282
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_22: 2027939463
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_23: -865652206
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_24: 300371804
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_25: -1199135209
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_26: -1001589269
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_27: -622978866
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_3: 286621042
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_30: -2132898076
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_31: 899045095
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_32: 2050928934
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_33: 340120203
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_34: -1194854789
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_35: 1809045599
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_41: 513960277
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_42: 1424115342
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_43: -1611474310
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_8: 650691799
+      NES - Samurai Pizza Cats Ninja Cat Kyatto Ninja Teyandee JPN - Bat Cat_9: -1650944109
+      PlayerProjectile: -574916917
+      Run1: 1551719798
+      Run2: 152341800
+      Run3: -1714534194
+      Run4: 679646772
+      Throw1: -572739348
+      Throw2: -1940421014
+      Walk1: 669322524
+      Walk2 && Jump1: 1837831086
+      Walk3: -1714794805
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
