@@ -10,23 +10,29 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] Transform player;
+
     [SerializeField] float minXClamp;
     [SerializeField] float maxXClamp;
     [SerializeField] float minYClamp;
     [SerializeField] float maxYClamp;
 
-    private void LateUpdate()
+    [Range(0, 1)]
+    public float smoothTime;
+
+    Vector3 velocity = Vector3.zero;
+
+    private void FixedUpdate()
     {
+       if (!GameManager.Instance || !GameManager.Instance.PlayerInstance) return;
+
         Vector3 cameraPos = transform.position;
 
-        // Update both x and y positions separately
-        cameraPos.x = Mathf.Clamp(player.transform.position.x, minXClamp, maxXClamp);
-        cameraPos.y = Mathf.Clamp(player.transform.position.y, minYClamp, maxYClamp);
+        cameraPos.x = Mathf.Clamp(GameManager.Instance.PlayerInstance.transform.position.x, minXClamp, maxXClamp);
+        cameraPos.y = Mathf.Clamp(GameManager.Instance.PlayerInstance.transform.position.y, minYClamp, maxYClamp);
 
-        transform.position = cameraPos;
+        transform.position = Vector3.SmoothDamp(transform.position, cameraPos, ref velocity, smoothTime);
     }
 }
-
 
 
 

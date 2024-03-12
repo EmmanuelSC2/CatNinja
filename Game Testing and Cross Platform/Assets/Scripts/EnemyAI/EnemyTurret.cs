@@ -22,17 +22,17 @@ public class EnemyTurret : Enemy
 
     private void Update()
     {
-       // if (!GameManager.Instance.PlayerInstance) return;
+        if (!GameManager.Instance.PlayerInstance) return;
 
-       // sr.flipX = (GameManager.Instance.PlayerInstance.transform.position.x < transform.position.x) ? true : false;
+        sr.flipX = (GameManager.Instance.PlayerInstance.transform.position.x < transform.position.x) ? true : false;
 
         AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
 
-       // float distance = Vector3.Distance(GameManager.Instance.PlayerInstance.transform.position, transform.position);
+        float distance = Vector3.Distance(GameManager.Instance.PlayerInstance.transform.position, transform.position);
 
-       // if (distance <= distThreshold)
-        //{
-           // sr.color = Color.red;
+        if (distance <= distThreshold)
+        {
+            sr.color = Color.red;
             if (curPlayingClips[0].clip.name != "Fire")
             {
                 if (Time.time >= timeSinceLastFire + projectileFireRate)
@@ -41,11 +41,11 @@ public class EnemyTurret : Enemy
                     timeSinceLastFire = Time.time;
                 }
             }
-       // }
-       // else
-       // {
-        //    sr.color = Color.white;
-        //}
+        }
+        else
+        {
+            sr.color = Color.white;
+        }
     }
 }
 

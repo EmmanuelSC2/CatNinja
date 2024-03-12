@@ -176,19 +176,27 @@ public class PlayerController : MonoBehaviour
     }
 
     //Point collectibles
-    void OnTriggerEnter2D(Collider2D other)
-    { if (other.gameObject.CompareTag("Point"))
+   /* void OnTriggerEnter2D(Collider2D other)
+    { 
+       
+        
+        
+        
+        if (other.gameObject.CompareTag("Point"))
         {
             Destroy(other.gameObject);
             pm.poinCount++;
         }
-    }
+    } */
 
     //trigger functions are called most other times - but would still require at least one object to be physics enabled
-    //private void OnTriggerEnter2D(Collider2D collision)
-   // {
-   
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("EnemyProjectile"))
+        {
+            GameManager.Instance.lives--;
+        }
+    }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
