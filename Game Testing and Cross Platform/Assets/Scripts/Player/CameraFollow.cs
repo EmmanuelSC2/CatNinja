@@ -1,8 +1,38 @@
+/* using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine; */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraFollow : MonoBehaviour
+{
+    [SerializeField] Transform player;
+    [SerializeField] float minXClamp;
+    [SerializeField] float maxXClamp;
+    [SerializeField] float minYClamp;
+    [SerializeField] float maxYClamp;
+
+    private void LateUpdate()
+    {
+        Vector3 cameraPos = transform.position;
+
+        // Update both x and y positions separately
+        cameraPos.x = Mathf.Clamp(player.transform.position.x, minXClamp, maxXClamp);
+        cameraPos.y = Mathf.Clamp(player.transform.position.y, minYClamp, maxYClamp);
+
+        transform.position = cameraPos;
+    }
+}
+
+
+
+
+
+
+/* public class Camera : MonoBehaviour
 {
 
     public float FollowSpeed = 2f;
@@ -20,7 +50,11 @@ public class Camera : MonoBehaviour
         Vector3 newPos = new Vector3(target.position.x, target.position.y + yOffset, -10f);
         transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
     }
-}
+}*/
+
+
+
+
 //CLASS SCRIPT
 
 /*public class Camera : MonoBehaviour

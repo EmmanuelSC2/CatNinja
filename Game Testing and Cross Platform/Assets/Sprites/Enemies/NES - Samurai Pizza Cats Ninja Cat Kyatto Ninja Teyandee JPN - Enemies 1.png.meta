@@ -202,7 +202,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,6 +210,69 @@ TextureImporter:
       bones: []
       spriteID: 841fd7f7c4455354ab17b174c4257609
       internalID: 619576602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret01
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 314
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2ee30b1bced5649a5101201405b21d
+      internalID: 1359814236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret02
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 314
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de77c3e0e19bc784abc42ae25ab29757
+      internalID: 921596536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BubbleProjectile
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 305
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0811e0fa1513ce043bf0194cd9f624fe
+      internalID: 1777161547
       vertices: []
       indices: 
       edges: []
@@ -225,8 +288,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      BubbleProjectile: 1777161547
       EnemyWalk1: 388011572
       EnemyWalk2: -254100877
+      Turret01: 1359814236
+      Turret02: 921596536
       UFO1: -847681577
       UFO2: -1988130629
       UFOShoot: 619576602

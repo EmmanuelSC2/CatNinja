@@ -9,8 +9,8 @@ public class Projectile : MonoBehaviour
     public float lifeTime;
 
     //hidden in inspector because we want to set our speed via script once we instantiate
-    [HideInInspector]
-    public float speed;
+    [HideInInspector] public float xVelocityVar;
+    [HideInInspector] public float yVelocityVar;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class Projectile : MonoBehaviour
             if (TestMode) Debug.Log("Lifetime defaulted to 2 on object " + gameObject.name);
         }
 
-        GetComponent<Rigidbody2D>().velocity = new Vector2(speed, speed);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(xVelocityVar, yVelocityVar);
         Destroy(gameObject, lifeTime);
     }
 }

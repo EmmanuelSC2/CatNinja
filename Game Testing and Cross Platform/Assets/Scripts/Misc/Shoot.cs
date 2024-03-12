@@ -8,7 +8,8 @@ public class Shoot : MonoBehaviour
 
     SpriteRenderer sr;
 
-    public float projectileSpeed = 7.0f;
+    [SerializeField] float initialXVelocity = 7.0f;
+    [SerializeField] float initialYVelocity = 7.0f;
     public Transform spawnPointLeft;
     public Transform spawnPointRight;
 
@@ -17,14 +18,22 @@ public class Shoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
+       sr = GetComponent<SpriteRenderer>();
 
-        if (projectileSpeed <= 0)
+        /*
+
+        if (initialXVelocity <= 0)
         {
-            projectileSpeed = 7.0f;
+            initialXVelocity = 7.0f;
         }
 
-        if (!spawnPointLeft || !spawnPointRight || !projectilePrefab)
+        if (initialYVelocity <= 0)
+        {
+            initialYVelocity = 7.0f; 
+        } 
+       */
+
+            if (!spawnPointLeft || !spawnPointRight || !projectilePrefab)
         {
             if (TestMode) Debug.Log("Set default values Shoot Script. On object " + gameObject.name);
         }
@@ -36,12 +45,14 @@ public class Shoot : MonoBehaviour
         if (!sr.flipX)
         {
             Projectile curProjectile = Instantiate(projectilePrefab, spawnPointRight.position, spawnPointRight.rotation);
-            curProjectile.speed = projectileSpeed;
+            curProjectile.xVelocityVar = initialXVelocity;
+            curProjectile.yVelocityVar = initialYVelocity;
         }
         else
         {
             Projectile curProjectile = Instantiate(projectilePrefab, spawnPointLeft.position, spawnPointLeft.rotation);
-            curProjectile.speed = projectileSpeed;
+            curProjectile.xVelocityVar = -initialXVelocity;
+            curProjectile.yVelocityVar = initialYVelocity;
         }
     }
 }
