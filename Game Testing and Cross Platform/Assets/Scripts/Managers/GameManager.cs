@@ -27,18 +27,17 @@ public class GameManager : MonoBehaviour
         get => _lives;
         set
         {
+            if (value <= 0)
+            {
+                // If lives reach zero or below, load Game Over scene
+                SceneManager.LoadScene("GameOver");
+                return;
+            }
+
             if (_lives > value)
                 Respawn();
-            //we lost a life = respawn
 
             _lives = value;
-
-            //if (_lives > maxLives)
-            //we've increased past our life maximum - so we should be set to our maxium
-            //_lives = maxLives
-
-            //if (_lives <= 0)
-            //GameOver!!!
 
             if (TestMode) Debug.Log("Lives has been set to: " + _lives.ToString());
 
@@ -83,6 +82,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Method to restart the game
+    public void RestartGame()
+    {
+        // Reset the player's lives
+        _lives = maxLives;
+        // Load the level scene
+        SceneManager.LoadScene("Level");
+    }
 
     public void ChangeScene(int buildIndex)
     {

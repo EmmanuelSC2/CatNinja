@@ -10,76 +10,41 @@ public class PlayerController : MonoBehaviour
     public bool TestMode = false;
 
     //Components
-    Rigidbody2D rb;
-    SpriteRenderer sr;
-    Animator anim;
+    Rigidbody2D rb; // Reference to the Rigidbody2D component, which allows the GameObject to be affected by physics
+    SpriteRenderer sr; // Reference to the SpriteRenderer component, which renders the 2D graphics of the GameObject
+    Animator anim; // Reference to the Animator component, which controls animations for the GameObject
+    AudioSource audioSource;// Reference to the AudioSource component, which plays audio clips
 
     //Movemement Var
-    [SerializeField] private float speed = 7.0f;
-    [SerializeField] private float jumpForce = 300.0f;
+    [SerializeField] private float speed = 7.0f; // Speed of the player character
+    [SerializeField] private float jumpForce = 300.0f; // Force applied when the player jumps
 
     //Groundcheck stuff
-    [SerializeField] private bool isGrounded;
-    [SerializeField] private Transform GroundCheck;
-    [SerializeField] private LayerMask isGroundLayer;
-    [SerializeField] private float groundCheckRadius = 0.02f;
+    [SerializeField] private bool isGrounded; // Flag to check if the player is touching the ground
+    [SerializeField] private Transform GroundCheck; // Transform used to check if the player is grounded
+    [SerializeField] private LayerMask isGroundLayer; // Layer mask used to determine what is considered ground
+    [SerializeField] private float groundCheckRadius = 0.02f; // Radius of the circle used for ground checking
 
-    [SerializeField] private int maxLives = 5;
-
-    //PointMagaer
-    public PointManager pm;
-
-    //Fields and Properties
-    private int _lives = 3;
-    public int lives
-    {
-        get => _lives;
-        set
-        {
-            //if (_lives > value)
-            //we lost a life = respawn
-
-            _lives = value;
-
-            //if (_lives > maxLives)
-            //we've increased past our life maximum - so we should be set to our maxium
-            //_lives = maxLives
-
-            //if (_lives <= 0)
-            //GameOver!!!
-
-            if (TestMode) Debug.Log("Lives has been set to: " + _lives.ToString());
-        }
-    }
-
-    private int _score = 0;
-    public int score
-    {
-        get => _score;
-        set
-        {
-            _score = value;
-
-            if (TestMode) Debug.Log("Score has been set to: " + _score.ToString());
-        }
-    }
+    //Audio Clips
+    [SerializeField] AudioClip jumpSound; // Sound clip played when the player jumps
+    [SerializeField] AudioClip stompSound; // Sound clip played when the player stomps
 
     //Coroutine Variable
-    Coroutine jumpForceChange;
-
-
+    Coroutine jumpForceChange; // Coroutine used to change the player's jump force
 
     // Start is called before the first frame update
     void Start()
     {
         //Component references grabbed through script
-        rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component attached to the GameObject
+        sr = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer component attached to the GameObject
+        anim = GetComponent<Animator>(); // Get the Animator component attached to the GameObject
+        audioSource = GetComponent<AudioSource>(); // Get the AudioSource component attached to the GameObject
 
+        // Set default values if parameters are not set
         if (speed <= 0)
         {
-            speed = 7.0f;
+            speed = 7.0f; // Default speed value if not set
             if (TestMode) Debug.Log("Speed has been set to a default value of 7.0f " + gameObject.name);
         }
 
@@ -89,13 +54,15 @@ public class PlayerController : MonoBehaviour
             if (TestMode) Debug.Log("Hey our ground check radius was defauted to 0.2f " + gameObject.name);
         }
 
+
         if (GroundCheck == null)
         {
-            GameObject obj = new GameObject();
-            obj.transform.SetParent(gameObject.transform);
-            obj.transform.localPosition = Vector3.zero;
-            obj.name = "GroundCheck";
-            GroundCheck = obj.transform;
+            // Create a GroundCheck object if not set
+            GameObject obj = new GameObject(); // Create a new GameObject
+            obj.transform.SetParent(gameObject.transform);// Set its parent to the current GameObject
+            obj.transform.localPosition = Vector3.zero;// Reset its local position
+            obj.name = "GroundCheck";// Set its name
+            GroundCheck = obj.transform;// Assign it to the GroundCheck variable
             if (TestMode) Debug.Log("GroundCheck Object is Created " + gameObject.name);
         }
 
@@ -104,8 +71,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Time.timeScale == 0) return;
+
         float xInput = Input.GetAxisRaw("Horizontal");
-        float yInput = Input.GetAxisRaw("Vertical");
+        //float yInput = Input.GetAxisRaw("Vertical");
 
         if (isGrounded)
         {
@@ -133,15 +102,17 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            audioSource.PlayOneShot(jumpSound);
         }
 
         if (Input.GetButtonDown("Jump") && !isGrounded)
         {
             anim.SetTrigger("JumpAtk");
+            audioSource.PlayOneShot(stompSound);
         }
 
         anim.SetBool("IsGrounded", isGrounded);
-        anim.SetFloat("Speed", Mathf.Abs(xInput)); 
+        anim.SetFloat("Speed", Mathf.Abs(xInput));
 
         //Sprite Flipping
         if (xInput != 0) sr.flipX = (xInput < 0);
@@ -149,7 +120,7 @@ public class PlayerController : MonoBehaviour
 
     public void IncreaseGravity()
     {
-        rb.gravityScale = 15;
+        rb.gravityScale = 5;
     }
 
     public void StartJumpForceChange()
@@ -175,26 +146,22 @@ public class PlayerController : MonoBehaviour
         jumpForceChange = null;
     }
 
-    //Point collectibles
-   /* void OnTriggerEnter2D(Collider2D other)
-    { 
-       
-        
-        
-        
-        if (other.gameObject.CompareTag("Point"))
-        {
-            Destroy(other.gameObject);
-            pm.poinCount++;
-        }
-    } */
-
     //trigger functions are called most other times - but would still require at least one object to be physics enabled
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("EnemyProjectile"))
         {
             GameManager.Instance.lives--;
+            //SceneManager.LoadScene("GameOver");
+        }
+
+        if (collision.CompareTag("Squish"))
+        {
+            collision.transform.parent.gameObject.GetComponent<Enemy>().TakeDamage(9999);
+
+            rb.velocity = Vector2.zero;
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            //audioSource.PlayOneShot(stompSound);
         }
     }
 

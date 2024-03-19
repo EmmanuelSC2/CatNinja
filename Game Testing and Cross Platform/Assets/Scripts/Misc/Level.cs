@@ -11,5 +11,7 @@ public class Level : MonoBehaviour
     {
         Time.timeScale = 1;
         GameManager.Instance.SpawnPlayer(levelStart);
+        //When level loads, set lives from gameManager
     }
+
 }

@@ -5,19 +5,20 @@ using UnityEngine;
 public class EnemyTurret : Enemy
 {
     public float projectileFireRate;
+    public new int maxHealth = 2; // Maximum health of the turret
+    private int currentHealth; // Current health of the turret
 
     float timeSinceLastFire = 0;
-    float distThreshold = 3.0f;
+    float distThreshold = 10.0f;
 
     protected override void Start()
     {
         base.Start();
 
-
         if (projectileFireRate <= 0)
             projectileFireRate = 2.0f;
 
-        //do any addional stuff that is need for my subclass.
+        currentHealth = maxHealth; // Set current health to maximum when the turret starts
     }
 
     private void Update()
@@ -47,5 +48,23 @@ public class EnemyTurret : Enemy
             sr.color = Color.white;
         }
     }
+
+    // Collision detection with player balls
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("PlayerProjectile"))
+        {
+            // Reduce turret health
+            currentHealth--;
+
+            // Check if health reaches zero
+            if (currentHealth <= 0)
+            {
+                // Destroy turret
+                Destroy(gameObject);
+            }
+        }
+    }
 }
+
 

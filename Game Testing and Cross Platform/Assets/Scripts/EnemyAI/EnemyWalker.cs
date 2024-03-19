@@ -1,10 +1,12 @@
- using UnityEngine;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnemyWalker : Enemy
 {
     Rigidbody2D rb;
     [SerializeField] float xVelocity;
+    public new int maxHealth = 1; // Maximum health of the enemy walker
+    private int currentHealth; // Current health of the enemy walker
 
     // Start is called before the first frame update
     protected override void Start()
@@ -16,6 +18,8 @@ public class EnemyWalker : Enemy
 
         if (xVelocity <= 0)
             xVelocity = 3;
+
+        currentHealth = maxHealth; // Set current health to maximum when the enemy walker starts
     }
 
     private void Update()
@@ -36,24 +40,26 @@ public class EnemyWalker : Enemy
         }
     }
 
-
-    public override void TakeDamage(int damage)
+    // Collision detection with player balls
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        //CREATE OWN DAMAGE FUNCTIONALITY THAT WILL DELETE THE PARENT GAMEOBJECT
-        health -= damage;
-
-        if (health <= 0)
-            Destroy(gameObject.transform.parent.gameObject, 2);
-
-        if (damage == 9999)
+        if (collision.gameObject.CompareTag("PlayerProjectile"))
         {
-            anim.SetTrigger("Squish");
-            return;
+            // Reduce enemy walker health
+            currentHealth--;
+
+            // Check if health reaches zero
+            if (currentHealth <= 0)
+            {
+                // Destroy enemy walker
+                Destroy(transform.parent.gameObject);
+            }
+            /*else
+            {
+                // Play squish animation
+                anim.SetTrigger("Squish");
+            } */
         }
-
-        base.TakeDamage(damage);
-
-        Debug.Log("Enemy Walker took " + damage.ToString() + " damage");
     }
-
 }
+

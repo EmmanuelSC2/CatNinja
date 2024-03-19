@@ -10,6 +10,9 @@ public class Shoot : MonoBehaviour
 
     [SerializeField] float initialXVelocity = 7.0f;
     [SerializeField] float initialYVelocity = 7.0f;
+
+    [SerializeField] AudioClip shootSound;
+
     public Transform spawnPointLeft;
     public Transform spawnPointRight;
 
@@ -42,6 +45,9 @@ public class Shoot : MonoBehaviour
 
     public void Fire()
     {
+
+    
+
         if (!sr.flipX)
         {
             Projectile curProjectile = Instantiate(projectilePrefab, spawnPointRight.position, spawnPointRight.rotation);
@@ -54,5 +60,9 @@ public class Shoot : MonoBehaviour
             curProjectile.xVelocityVar = -initialXVelocity;
             curProjectile.yVelocityVar = initialYVelocity;
         }
+
+        if (shootSound)
+            GetComponent<AudioSource>().PlayOneShot(shootSound);
+
     }
 }

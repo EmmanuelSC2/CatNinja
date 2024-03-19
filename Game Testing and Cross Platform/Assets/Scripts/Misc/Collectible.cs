@@ -24,7 +24,7 @@ public class Collectible : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        /* if (collision.CompareTag("Player"))
         {
             PlayerController pc = collision.GetComponent<PlayerController>();
 
@@ -39,10 +39,10 @@ public class Collectible : MonoBehaviour
                 case PickupType.Score:
                     pc.score++;
                     break;
-            }
+            } 
 
             Destroy(gameObject, timeToDestroy);
-        }
+        } */
 
 
     }
